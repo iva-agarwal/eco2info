@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# ECO2info 🌱
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ECO2info is a web application that calculates the carbon emissions associated with visiting a webpage. It aims to raise awareness about the environmental impact of web browsing and empower users to make greener choices online.
 
-## Available Scripts
+![ECO2info Demo](demo.gif)
 
-In the project directory, you can run:
+## Features 🚀
 
-### `npm start`
+- **Carbon Emission Calculation:** Input a website URL and get real-time calculations of its carbon emissions based on various factors.
+- **Data Transfer Breakdown:** Gain insights into the amount of data transferred from CSS, fonts, media, JavaScript, and HTML.
+- **User-friendly Interface:** Intuitive and easy-to-use interface for inputting website URLs and viewing emission results.
+- **Educational Resources:** Access educational materials on sustainability and digital pollution to learn more about the topic.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used 💻
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React: Frontend development framework for building the user interface.
+- Tailwind CSS: Utility-first CSS framework for styling the application.
+- Python: Backend programming language for building the API.
+- Flask: Lightweight web framework for Python used to create the backend server.
 
-### `npm test`
+## Usage 📝
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To use ECO2info, simply [visit the website](#) and input the URL of the website you want to analyze. The application will then provide you with insights into its carbon emissions and data transfer breakdown.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contact 📧
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For questions or inquiries, please contact Iva(mailto:iva.agarwal.bkn@gmail.com).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Acknowledgements 
 
-### `npm run eject`
+Special thanks to Kartik Chhimpa for their contributions to this project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
