@@ -20,7 +20,7 @@ ECO2info is a web application that calculates the carbon emissions associated wi
 
 ## Usage 📝
 
-To use ECO2info, simply [visit the website](#) and input the URL of the website you want to analyze. The application will then provide you with insights into its carbon emissions and data transfer breakdown.
+To use ECO2info, simply [visit the website](https://eco2info.netlify.app/) and input the URL of the website you want to analyze. The application will then provide you with insights into its carbon emissions and data transfer breakdown.
 
 
 ## Contact 📧
