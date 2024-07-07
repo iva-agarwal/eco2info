@@ -48,7 +48,7 @@ const Input = ({ url, onURLChange, setResult, onURLSubmit }) => {
     try {
       setShowModal(true); // Show the modal when the request is being processed
       const response = await axios.post(
-        ` https://796e-2401-4900-1c0a-57be-2463-720-cee1-d806.ngrok-free.app/?input=${url}`
+        ` https://c0fa-182-69-181-35.ngrok-free.app/?input=${url}`
       );
       setResult(response.data);
       setSubmitted(true);
