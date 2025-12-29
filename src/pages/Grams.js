@@ -3,8 +3,8 @@ import '../index.css';
 
 const Grams = ({ result,url }) => {
   // Check if result exists and has Carbon_footprint property
-  const carbonFootprint = result && result.Carbon_footprint;
-  const greenHosting = result && result.Green_hosting;
+  const carbonFootprint = result && result.carbon_footprint;
+  const greenHosting = result && result.green_hosting;
   const fact1 = result && result.fact1;
 
 
