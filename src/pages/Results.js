@@ -7,14 +7,14 @@ const Results = ({ result }) => {
   }
 
   const {
-    css_data_mb,
-    font_data_mb,
-    js_data_mb,
-    media_data_mb,
-    html_data_mb,
-    total_data_mb,
-    Carbon_footprint,
-    Green_hosting
+    css_data_gb,
+    font_data_gb,
+    js_data_gb,
+    media_data_gb,
+    html_data_gb,
+    total_data_gb,
+    carbon_footprint,
+    green_hosting
   } = result;
 
   // Define an array of headings
@@ -29,12 +29,22 @@ const Results = ({ result }) => {
     "Implementing these recommendations can significantly reduce the total size of a website and its carbon footprint."
   ];
 
+  const gbToMb = (gb) => (gb * 1024).toFixed(3);
+
+  const css_data_mb = gbToMb(css_data_gb);
+  const font_data_mb = gbToMb(font_data_gb);
+  const js_data_mb = gbToMb(js_data_gb);
+  const media_data_mb = gbToMb(media_data_gb);
+  const html_data_mb = gbToMb(html_data_gb);
+  const total_data_mb = gbToMb(total_data_gb);
+
+
   // Define an array of corresponding data_mb values
   const data_mb = [css_data_mb, font_data_mb, js_data_mb, media_data_mb, html_data_mb,total_data_mb];
 
   return (
     <>
- {Green_hosting?<div className="text-3xl md:text-5xl text-[#1ecb7b] font-bold w-full flex flex-row items-center justify-start p-5 md:p-10">
+ {green_hosting?<div className="text-3xl md:text-5xl text-[#1ecb7b] font-bold w-full flex flex-row items-center justify-start p-5 md:p-10">
         <span className="inline-block p-2 m-2">This website runs on green hosting</span>
         <svg
       fill="currentColor"
