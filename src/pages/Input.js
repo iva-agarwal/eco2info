@@ -43,22 +43,24 @@ const Input = ({ url, onURLChange, setResult, onURLSubmit }) => {
   }, [content.length]);
 
 
-
-  const handleSubmit = async () => {
-    try {
-      setShowModal(true); // Show the modal when the request is being processed
-      const response = await axios.post(
-        `https://carbon-backend-itmdlvimp-ivas-projects-a5db9098.vercel.app/calculate_footprint?web_url=${url}`
-      );
-      setResult(response.data);
-      setSubmitted(true);
-      onURLSubmit(); // Notify parent component that URL has been submitted
-    } catch (error) {
-      console.error("Error:", error);
-    } finally {
-      setShowModal(false); // Hide the modal after the request is complete
-    }
-  };
+const handleSubmit = async () => {
+  try {
+    setShowModal(true); // Show the modal when the request is being processed
+    const response = await axios.get(
+      `https://carbon-backend-itmdlvimp-ivas-projects-a5db9098.vercel.app/calculate_footprint`,
+      {
+        params: { web_url: url } // axios will convert this to ?web_url=...
+      }
+    );
+    setResult(response.data);
+    setSubmitted(true);
+    onURLSubmit(); // Notify parent component that URL has been submitted
+  } catch (error) {
+    console.error("Error:", error);
+  } finally {
+    setShowModal(false); // Hide the modal after the request is complete
+  }
+};
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center  p-5 md:p-10 ">
