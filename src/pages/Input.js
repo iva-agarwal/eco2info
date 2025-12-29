@@ -48,7 +48,7 @@ const Input = ({ url, onURLChange, setResult, onURLSubmit }) => {
     try {
       setShowModal(true); // Show the modal when the request is being processed
       const response = await axios.post(
-        ` https://c0fa-182-69-181-35.ngrok-free.app/?input=${url}`
+        `https://carbon-backend-itmdlvimp-ivas-projects-a5db9098.vercel.app/calculate_footprint?web_url=${url}`
       );
       setResult(response.data);
       setSubmitted(true);
