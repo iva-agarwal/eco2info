@@ -47,7 +47,7 @@ const handleSubmit = async () => {
   try {
     setShowModal(true); // Show the modal when the request is being processed
     const response = await axios.get(
-      `https://carbon-backend-itmdlvimp-ivas-projects-a5db9098.vercel.app/calculate_footprint`,
+      `https://carbon-backend-qd5j.onrender.com`,
       {
         params: { web_url: url } // axios will convert this to ?web_url=...
       }
